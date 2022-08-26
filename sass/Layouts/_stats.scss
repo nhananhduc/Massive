@@ -1,0 +1,25 @@
+.stats {
+    background-color: $color-black-7;
+    .stats__col {
+        padding: 0 $pd-0;
+        text-align: center;
+        .stats__icon {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-bottom: $mg-5;
+            i {
+                color: $color-white-0;
+                font-size: $fs-3 + 2;
+                margin-right: $mg-5;
+            }
+            h1 {
+                @include styleText($color-white-0, $fs-5 - 2, $fw-0);
+                letter-spacing: $spacing-1;
+            }
+        }
+        span {
+            @include styleText($color-white-0, $fs-0, $fw-0);
+        }
+    }
+}

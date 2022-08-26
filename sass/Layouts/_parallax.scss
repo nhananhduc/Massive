@@ -1,0 +1,29 @@
+.parallax {
+    background-image: url(../img/parallax-bg.jpg);
+    @extend %backgroundImg;
+    background-attachment: fixed;
+    .parallax__content {
+        width: 85%;
+        text-align: center;
+        padding: $pd-6 0;
+        h4 {
+            @include styleText($color-yellow-0, $fs-0 + 1, $fw-0);
+            letter-spacing: $spacing-1 + 1;
+        }
+        h1 {
+            @include styleText($color-white-0, $fs-5, $fw-2);
+            letter-spacing: $spacing-1;
+        }
+        a {
+            display: inline-block;
+            margin-top: $mg-1;
+            background-color: $color-yellow-0;
+            transition: 0.3s;
+            color: $color-white-0;
+            &:hover {
+                background-color: $color-white-0;
+                color: $color-black-3;
+            }
+        }
+    }
+}

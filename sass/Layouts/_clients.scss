@@ -1,0 +1,20 @@
+.clients{
+    .clients__carousel{
+        .clients__logo{
+            margin: 0 $mg-0;
+        }
+        &.owl-theme {
+            .owl-dots {
+                margin-top: $mg-3;
+                .owl-dot {
+                    span {
+                        width: 12px;
+                        height: 12px;
+                        margin: $mg-5 - 5 $mg-5 - 3;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

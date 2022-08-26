@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massive</title>
+
+    <!-- BOOTSTRAP 4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- LIGHT BOX CSS -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+
+    <!-- VENO BOX CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="myNavBar navbar navbar-expand-md navbar-light">
+            <div class="myNavBar__left">
+                <img src="./img/logo-dark.png" alt="logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#massiveNavBar"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse myNavBar__right" id="massiveNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME<span class="indicator" id="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHORTCODES<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item divider">
+                        <a class="nav-link">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-cart"></i> CART(2)<span class="indicator">+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-search"></i> SEARCH<span class="indicator">+</span></a></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner__content container">
+            <h1>THINK BEYOND</h1>
+            <h3>EXPLORE LIMITLESS POSSIBILITIES</h3>
+        </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="section feature">
+        <div class="feature__content">
+            <div class="title container-md">
+                <h3>WE LOVE TO DESIGN THE CREATIVE</h3>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus. Nam libero tempore</p>
+            </div>
+            <div class="feature__detail container-md">
+                <div class="row">
+                    <div class="col-12 col-lg-4 feature__col">
+                        <div class="feature__item feature__item-modify">
+                            <div class="feature__icon">
+                                <i class="fa fa-pencil-ruler"></i>
+                            </div>
+                            <h4>MODERN DESIGN</h4>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed
+                                nisi
+                                eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 feature__col">
+                        <div class="feature__item">
+                            <div class="feature__icon">
+                                <i class="fa fa-mobile-alt"></i>
+                            </div>
+                            <h4>BUILD WITH BOOTSTRAP</h4>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed
+                                nisi
+                                eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 feature__col">
+                        <div class="feature__item">
+                            <div class="feature__icon">
+                                <i class="fa fa-wine-glass"></i>
+                            </div>
+                            <h4>CLEAN CODE</h4>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed
+                                nisi
+                                eleifend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+        <div class="overlay"></div>
+        <div class="skills__content container-md">
+            <div class="row">
+                <div class="col-12 col-lg-6 skills__left">
+                    <div class="skills__title">
+                        <h3>SKILLS AND EXPERIENCE</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 skills__right">
+                    <h4>WE ARE DAMN EXPART !</h4>
+                    <p>We are a team of multi-skilled and curious digital specialists who are always up for a massive
+                        challenge forever. We are a team of multi-skilled and curious digital specialists who are always
+                        up for a massive challenge forever.</p>
+                    <div class="progress massive__progress">
+                        <div class="progress-bar" role="progressbar" style="max-width: 80%;">HTML / CSS / JQUERY</div>
+                        <span class="percent__80">80%</span>
+                    </div>
+
+                    <div class="progress massive__progress">
+                        <div class="progress-bar" role="progressbar" style="max-width: 90%;">PHOTOSHOP</div>
+                        <span class="percent__90">90%</span>
+                    </div>
+
+                    <div class="progress massive__progress">
+                        <div class="progress-bar" role="progressbar" style="max-width: 75%;">GRAPHIC DESIGN</div>
+                        <span class="percent__75">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section portfolio">
+        <div class="portfolio__content">
+            <div class="title__contain container-md">
+                <div class="title">
+                    <h3>CREATIVE SHOWCASE</h3>
+                    <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge
+                        and
+                        learning as fast as digital is changing. We are a team of multi-skilled and curious digital
+                        specialists who are always up for a challenge.</p>
+                </div>
+            </div>
+            <div class="portfolio__menu container-md">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">ALL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRINTING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WEB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ILLUSTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEDIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CRAFT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio__img container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-01.jpg" alt="portfolio 01">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="./img/portfolio-01.jpg" data-lightbox="portfolio-01"
+                                    data-title="lightbox view"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="./img/portfolio-01.jpg" data-lightbox="portfolio-01"
+                                        data-title="lightbox view">LIGHTBOX VIEW</a></h4>
+                                <p><a href="#">CATEGORY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-02.jpg" alt="portfolio 02">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="#">EXTERNAL LINK</a></h4>
+                                <p><a href="#">CATEGORY 1 , CATEGORY 2</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-03.jpg" alt="portfolio 03">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="./img/portfolio-03.jpg" data-lightbox="portfolio-03"
+                                    data-title="lightbox view"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="./img/portfolio-03.jpg" data-lightbox="portfolio-03"
+                                        data-title="lightbox view">LIGHTBOX GALLERY</a></h4>
+                                <p><a href="#">CATEGORY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div7 class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-04.jpg" alt="portfolio 04">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a class="my-video-links" data-autoplay="true" data-vbtype="video"
+                                    href="https://vimeo.com/45830194"><i class="fa fa-play"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="#">VIDEO LIGHTBOX</a></h4>
+                                <p><a href="#">CATEGORY</a></p>
+                            </div>
+                        </div>
+                    </div7>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-05.jpg" alt="portfolio 05">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="./img/portfolio-05.jpg" data-lightbox="portfolio-05"
+                                    data-title="lightbox view"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="./img/portfolio-05.jpg" data-lightbox="portfolio-05"
+                                        data-title="lightbox view">LIGHTBOX VIEW</a></h4>
+                                <p><a href="#">CATEGORY 3, CATEGORY 4</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-06.jpg" alt="portfolio 06">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="#">EXTERNAL LINK</a></h4>
+                                <p><a href="#">CATEGORY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-07.jpg" alt="portfolio 07">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="./img/portfolio-07.jpg" data-lightbox="portfolio-07"
+                                    data-title="lightbox view"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="./img/portfolio-07.jpg" data-lightbox="portfolio-07"
+                                        data-title="lightbox view">LIGHTBOX VIEW</a></h4>
+                                <p><a href="#">CATEGORY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col__img">
+                        <img class="img-fluid" src="./img/portfolio-08.jpg" alt="portfolio 08">
+                        <div class="portfolio__desc">
+                            <div class="desc__button">
+                                <a href="./img/portfolio-08.jpg" data-lightbox="portfolio-08"
+                                    data-title="lightbox view"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="desc__text">
+                                <h4><a href="./img/portfolio-08.jpg" data-lightbox="portfolio-08"
+                                        data-title="lightbox view">LIGHTBOX VIEW</a></h4>
+                                <p><a href="#">CATEGORY 5 , CATEGORY 6</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section team">
+        <div class="team__content container-md">
+            <div class="title">
+                <h3>WE HAVE A FABULOUS TEAM</h3>
+                <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and
+                    learning as fast as digital is changing. We are a team of multi-skilled and curious digital
+                    specialists who are always up for a challenge.</p>
+            </div>
+            <div class="team__member">
+                <div class="row">
+                    <div class="col-12 col-lg-4 p-0">
+                        <div class="team__img">
+                            <img class="img-fluid w-100" src="./img/team-1.jpg" alt="team 1">
+                            <div class="team__name">
+                                <h5>MARTIN SMITH</h5>
+                                <p>FOUNDER & CEO</p>
+                            </div>
+                            <div class="team__info">
+                                <div class="team__info__text">
+                                    <h4>I LOVE MY STUDIO</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up
+                                        for
+                                        a
+                                        challenge and learning as fast as digital is changing.</p>
+                                </div>
+                                <div class="team__social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 p-0">
+                        <div class="team__img">
+                            <img class="img-fluid w-100" src="./img/team-2.jpg" alt="team 2">
+                            <div class="team__name">
+                                <h5>FRANKLIN HARBET</h5>
+                                <p>HR MANAGER</p>
+                            </div>
+                            <div class="team__info">
+                                <div class="team__info__text">
+                                    <h4>CONNECTING PEOPLE</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up
+                                        for
+                                        a
+                                        challenge and learning as fast as digital is changing.</p>
+                                </div>
+                                <div class="team__social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 p-0">
+                        <div class="team__img">
+                            <img class="img-fluid w-100" src="./img/team-3.jpg" alt="team 3">
+                            <div class="team__name">
+                                <h5>LINDA ANDERSON</h5>
+                                <p>MARKETING MANAGER</p>
+                            </div>
+                            <div class="team__info">
+                                <div class="team__info__text">
+                                    <h4>NETWORK BUILDER</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up
+                                        for
+                                        a
+                                        challenge and learning as fast as digital is changing.</p>
+                                </div>
+                                <div class="team__social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiring">
+                    <div class="row hiring__content">
+                        <div class="col-12 col-md-9 hiring__info">
+                            <h4>WE ARE <span>HIRING</span></h4>
+                            <p>Nullam ut consectetur dolor. Sed sit amet iaculis nisi. Mauris ridiculus elementum
+                                non
+                                felis
+                                etewe
+                                blandit.</p>
+                        </div>
+                        <div class="col-12 col-md-3 hiring__button">
+                            <a class="button" href="#">JOIN THE CLUB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <section class="parallax">
+        <div class="parallax__content container">
+            <h4>AWESOME PARALLAX EFFECT</h4>
+            <h1>ART IS KNOWING WHICH ONES TO KEEP</h1>
+            <a href="#" class="button">HANG WITH US</a>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section blog">
+        <div class="blog__content container-md">
+            <div class="title ">
+                <h3>LATEST BLOG</h3>
+                <p>Sed sit amet iaculis nisi. Mauris ridiculus elementum non felis etewe blandit Pellentesque eu quam
+                    sem, ac malesuada leo sem quam pellente.</p>
+            </div>
+            <div class="blog__detail">
+                <div class="row">
+                    <div class="col-12 col-lg-6 blog__left">
+                        <div class="blog__img">
+                            <img src="./img/blog-img.jpg" alt="blog">
+                            <p>We work together for fun</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 blog__right">
+                        <div class="blog__text">
+                            <div class="post__cat">
+                                <a href="#">INTERFACE,</a>
+                                <a href="#">STANDARD,</a>
+                            </div>
+                            <h4>
+                                <a href="#">WE WORK TOGETHER FOR FUN</a>
+                            </h4>
+                            <div class="date">
+                                <a href="#">MARTIN SMITH |</a>
+                                JULY 29, 2015
+                            </div>
+                            <p>Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada
+                                leo
+                                sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                                fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem
+                                quam
+                                pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+                            <a class="read__more" href="#">READ MORE
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABS -->
+    <section class="section tabs">
+        <div class="tabs__content container-md">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabs__icon">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" data-toggle="pill" href="#pills-responsive">
+                                    <i class="fa fa-tablet-alt"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-toggle="pill" href="#pills-work">
+                                    <i class="fa fa-copy"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-toggle="pill" href="#pills-possibility">
+                                    <i class="fa fa-lightbulb"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-toggle="pill" href="#pills-limit">
+                                    <i class="fa fa-drafting-compass"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-toggle="pill" href="#pills-shortcode">
+                                    <i class="fab fa-wpexplorer"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tabs__text tab-pane show active" id="pills-responsive" role="tabpanel">
+                            <h4>FULL RESPONSIVE</h4>
+                            <h2>WE WORK TOGETHER FOR FUN</h2>
+                            <p>In quis scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent
+                                elementum
+                                feugiat dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                scelerisque
+                                mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.
+                                In
+                                quis
+                                scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent elementum
+                                feugiat
+                                dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                scelerisque
+                                mattis,
+                                leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                        </div>
+                        <div class=" tabs__text tab-pane" id="pills-work" role="tabpanel">
+                            <h4>WORK FOR FUN</h4>
+                            <h2>MASSIVE UI COLLECTION</h2>
+                            <p>Leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam. In quis
+                                scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent elementum
+                                feugiat dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac
+                                metus diam. In quis scelerisque velit. Proin pellentesque neque ut scelerisque dapibus.
+                                Praesent elementum feugiat dignissim. Nunc placerat mi id nisi interdum mollis.</p>
+                        </div>
+                        <div class=" tabs__text tab-pane" id="pills-possibility" role="tabpanel">
+                            <h4>MULTIPURPOSE</h4>
+                            <h2>HUGE POSSIBILITIES</h2>
+                            <p>congue laoreet elit metus eget diam. Proin ac metus diam. In quis scelerisque velit.
+                                Proin pellentesque neque ut scelerisque dapibus. Praesent elementum feugiat dignissim.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.
+                                In quis scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent
+                                elementum feugiat dignissim. Nunc placerat mi id nisi interdum mollis.</p>
+                        </div>
+                        <div class=" tabs__text tab-pane" id="pills-limit" role="tabpanel">
+                            <h4>SKY IS THE LIMIT</h4>
+                            <h2>WE WORK TOGETHER FOR FUN</h2>
+                            <p>Proin ac metus diam. In quis scelerisque velit. Leo quam aliquet diam, congue laoreet
+                                elit metus eget diam. Proin pellentesque neque ut scelerisque dapibus. Praesent
+                                elementum feugiat dignissim. Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus
+                                eget diam. Proin ac metus diam. In quis scelerisque velit. Proin pellentesque neque ut
+                                scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc placerat mi id nisi
+                                interdum mollis.</p>
+                        </div>
+                        <div class=" tabs__text tab-pane" id="pills-shortcode" role="tabpanel">
+                            <h4>RESPONSIVE</h4>
+                            <h2>UNLIMITED SHORTCODE</h2>
+                            <p>Kusto ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam.
+                                Proin ac metus diam. In quis scelerisque velit. Proin pellentesque neque ut scelerisque
+                                dapibus. Praesent elementum feugiat dignissim. Nunc placerat mi id nisi interdum mollis.
+                                Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet
+                                elit metus eget diam. Proin ac metus diam. In quis scelerisque velit. Proin pellentesque
+                                neque ut scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc placerat mi id
+                                nisi interdum mollis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class=" section stats">
+        <div class="stats__content container-lg">
+            <div class="row">
+                <div class="col-12 col-lg-3 stats__col">
+                    <div class="stats__icon">
+                        <i class="fa fa-layer-group"></i>
+                        <h1 class="num">40</h1>
+                    </div>
+                    <span>HTML MULTIPAGE</span>
+                </div>
+                <div class="col-12 col-lg-3 stats__col">
+                    <div class="stats__icon">
+                        <i class="fa fa-desktop"></i>
+                        <h1 class="num">30</h1>
+                    </div>
+                    <span>ONE PAGE DEMO</span>
+                </div>
+                <div class="col-12 col-lg-3 stats__col">
+                    <div class="stats__icon">
+                        <i class="fa fa-database"></i>
+                        <h1 class="num">87</h1>
+                    </div>
+                    <span>USEFUL SHORTCODE</span>
+                </div>
+                <div class="col-12 col-lg-3 stats__col">
+                    <div class="stats__icon">
+                        <i class="fa fa-chart-line"></i>
+                        <h1 class="num">17</h1>
+                    </div>
+                    <span>DIFFERENT CATEGORY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section testimonial">
+        <div class="testimonial__content ">
+            <div class="testimonial__carousel owl-carousel owl-theme container-md">
+                <div class="item">
+                    <div class="testimonial__thumb">
+                        <img src="./img/user.png" alt="user">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc,
+                            interdum commodo justoporttitor vitae. Quisque fermentum purus.</p>
+                        <h4>- KEVIN PAIGE -</h4>
+                        <span>ABC</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial__thumb">
+                        <img src="./img/user.png" alt="user">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla
+                            maximus dolor in quam euismod ac viverra libero aliquet.</p>
+                        <h4>- JOHN DOE -</h4>
+                        <span>HEAD OF MARKETING, TB</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial__thumb">
+                        <img src="./img/user.png" alt="user">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla
+                            maximus dolor in quam euismod ac viverra libero aliquet.</p>
+                        <h4>- LINDA SMITH -</h4>
+                        <span>CEO, TB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="m-0">
+    <!-- CLIENTS -->
+    <section class="section clients">
+        <div class="clients__content container-md">
+            <div class="clients__carousel owl-carousel owl-theme">
+                <div class="item clients__logo">
+                    <img src="./img/client-1.png" alt="client 1">
+                </div>
+                <div class="item clients__logo">
+                    <img src="./img/client-2.png" alt="client 2">
+                </div>
+                <div class="item clients__logo">
+                    <img src="./img/client-3.png" alt="client 3">
+                </div>
+                <div class="item clients__logo">
+                    <img src="./img/client-4.png" alt="client 4">
+                </div>
+                <div class="item clients__logo">
+                    <img src="./img/client-5.png" alt="client 5">
+                </div>
+                <div class="item clients__logo">
+                    <img src="./img/client-6.png" alt="client 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="primary__footer">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 primary__col">
+                            <a href="#" class="footer__logo">
+                                <img src="./img/logo-dark.png" alt="logo">
+                            </a>
+                            <p>Massive is fully responsible, Performance oriented and SEO optimized theme.</p>
+                        </div>
+                        <div class="col-12 col-lg-3 primary__col">
+                            <h5>RECENT POSTS</h5>
+                            <ul class="list__link">
+                                <li><a href="#">Standard Blog post</a></li>
+                                <li><a href="#">Quotation post</a></li>
+                                <li><a href="#">Audio Post</a></li>
+                                <li><a href="#">Massive Video Demo</a></li>
+                                <li><a href="#">Blog Image Post</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 primary__col">
+                            <h5>FOLLOW US</h5>
+                            <ul class="list__link">
+                                <li><a href="#">About Massive</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Term&Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 primary__col">
+                            <h5>RECENT WORK</h5>
+                            <ul class="list__img">
+                                <li><a href="#">
+                                        <img src="./img/work-1.jpg" alt="work-1">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-2.jpg" alt="work-2">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-3.jpg" alt="work-3">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-4.jpg" alt="work-4">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-5.jpg" alt="work-5">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-6.jpg" alt="work-6">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-7.jpg" alt="work-7">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-8.jpg" alt="work-8">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="./img/work-9.jpg" alt="work-9">
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary__footer">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 secondary__col">
+                            <span>Copyright 2012 - 2015 Massive Theme by <a
+                                    href="http://massivemarkup.lab.themebucket.net/index.html">ThemeBucket</a> | All
+                                Rights
+                                Reserved</span>
+                        </div>
+                        <div class="col-12 col-lg-6 secondary__col">
+                            <div class="social__link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- BOOTSTRAP 4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- LIGHT BOX -->
+    <script src="./js/lightbox.min.js"></script>
+
+    <!-- VENO BOX -->
+    <script src="./js/venobox.min.js"></script>
+
+    <!-- JQUERY WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+    <!-- COUNTUPS JS -->
+    <script src="./js/jquery.countup.js"></script>
+
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- BACK TO TOP -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

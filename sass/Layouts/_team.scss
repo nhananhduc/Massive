@@ -1,0 +1,118 @@
+.team {
+    .team__member {
+        margin-top: $mg-4;
+        .team__img {
+            position: relative;
+            overflow: hidden;
+            margin: 0 $pd-0;
+            .team__name {
+                text-align: right;
+                width: 60%;
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                background-color: $color-black-5;
+                padding: $pd-1 - 2 $pd-4;
+                h5 {
+                    @include styleText($color-white-0, $fs-0 - 1, $fw-0);
+                    letter-spacing: $spacing-1;
+                }
+                p {
+                    @include styleText($color-white-3, $fs-0 - 3, $fw-0);
+                    letter-spacing: $spacing-1;
+                    margin-bottom: 0;
+                }
+            }
+            .team__info {
+                opacity: 0;
+                text-align: center;
+                padding: 0 $pd-4;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: $border-0 solid $color-gray-12;
+                background-color: $color-overlay-1;
+                transition: 0.3s;
+                .team__info__text {
+                    width: 100%;
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    h4 {
+                        @include styleText($color-black-3, $fs-0 - 1, $fw-0);
+                        letter-spacing: $spacing-0 - 1;
+                        margin-bottom: $mg-0;
+                        transform: translateY(-100px);
+                        transition: 0.3s 0.2s;
+                    }
+                    p {
+                        @include styleText($color-gray-0, $fs-0 - 1, $fw-0);
+                        line-height: $line-height-2;
+                        transform: translateY(-100px);
+                        transition: 0.3s 0.2s;
+                    }
+                }
+                .team__social {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    width: 100%;
+                    transform: translateY(100px);
+                    transition: 0.3s 0.2s;
+                    a {
+                        color: $color-black-3;
+                        font-size: $fs-1 - 4;
+                        margin: 0 $mg-5;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    h4,
+                    p {
+                        transform: translateY(20%);
+                    }
+                    .team__social {
+                        transform: translateY(20%);
+                    }
+                }
+            }
+        }
+    }
+    .hiring {
+        margin-top: $mg-6;
+        padding: 0 $pd-0;
+        .hiring__content {
+            background-color: $color-gray-3;
+            padding: $pd-5;
+            .hiring__info {
+                h4 {
+                    @include styleText($color-black-1, $fs-0 + 3, $fw-0);
+                    margin-bottom: 0;
+                    span {
+                        color: $color-yellow-0;
+                    }
+                }
+                p {
+                    @include styleText($color-gray-0, $fs-0, $fw-0);
+                    margin-top: $mg-5;
+                }
+            }
+            .hiring__button {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                a {
+                    background-color: $color-black-3;
+                    transition: 0.3s;
+                    color: $color-white-0;
+                    &:hover {
+                        background-color: $color-yellow-0;
+                    }
+                }
+            }
+        }
+    }
+}

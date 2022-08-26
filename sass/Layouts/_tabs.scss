@@ -1,0 +1,83 @@
+.tabs {
+    background-image: url(../../img/pattern-2.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    .tabs__content {
+        padding: 0 $pd-0;
+        .tabs__icon {
+            .nav-pills {
+                a {
+                    position: relative;
+                    font-size: $fs-3 + 5;
+                    padding: $pd-0 + 5 $pd-7;
+                    color: $color-black-6;
+                    background-color: $color-overlay-2;
+                    transition: 0.3s;
+                    &.active,
+                    &:hover {
+                        background-color: $color-white-0;
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                    &::after {
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        content: "";
+                        border-width: 10px 10px 0 10px;
+                        border-color: $color-white-0 transparent transparent transparent;
+                        border-style: solid;
+                        opacity: 0;
+                        transition: 0.3s;
+                        margin-left: -10px;
+                    }
+                }
+                & > li + li {
+                    margin-left: $mg-0;
+                }
+            }
+        }
+        .tabs__text {
+            padding: $pd-0 0;
+            h4 {
+                @include styleText($color-gray-0, $fs-0 - 1, $fw-0);
+                letter-spacing: $spacing-1;
+            }
+            h2 {
+                @include styleText($color-black-1, $fs-3, $fw-0);
+                letter-spacing: $spacing-1;
+                margin-bottom: $mg-1;
+            }
+            p {
+                @include styleText($color-black-0, $fs-0, $fw-0);
+                line-height: $line-height-2;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .tabs__content {
+            .tabs__icon {
+                .nav-pills {
+                    & > li + li {
+                        margin-left: 0;
+                    }
+                    .nav-item {
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: $mg-5;
+                    }
+                }
+            }
+            .tabs__content {
+                .tabs__text {
+                    h2 {
+                        font-size: $fs-1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: $color-black-4;
+    padding: 0 $pd-4;
+    .myNavBar {
+        padding: 0;
+        height: 100px;
+        transition: all 0.3s ease-in-out;
+        .myNavBar__left {
+            img {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .myNavBar__right {
+            .nav-item {
+                &.active {
+                    a {
+                        color: $color-yellow-0;
+                    }
+                }
+                a {
+                    @include styleText($color-white-0, $fs-0 - 2, $fw-0);
+                    padding: 0 $pd-1;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $color-yellow-0;
+                    }
+                    .indicator {
+                        margin-left: $mg-9;
+                    }
+                }
+            }
+        }
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                font-size: $fs-1 + 5;
+                color: $color-white-0;
+            }
+        }
+    }
+
+    @include responsive("large") {
+        .myNavBar {
+            display: inline-block;
+        }
+    }
+
+    @include responsive("medium") {
+        .myNavBar {
+            display: flex;
+            height: 60px;
+            .myNavBar__left {
+                img {
+                    width: 50%;
+                }
+            }
+            .navbar-toggler {
+                padding: 0;
+                .navbar-toggler-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .myNavBar__right {
+                background-color: $color-white-0;
+                .nav-item {
+                    position: relative;
+                    border-bottom: 1px solid $color-gray-14;
+                    &.divider {
+                        display: none;
+                    }
+                    padding: $pd-1 $pd-4;
+                    &.active {
+                        a {
+                            color: $color-yellow-0;
+                        }
+                    }
+                    a {
+                        width: 100%;
+
+                        color: $color-black-1;
+                        padding: 0 $pd-1;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                        .indicator {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 60px;
+                            height: 45px;
+                            line-height: 43px;
+                            text-align: center;
+                            font-size: $fs-1 + 2;
+                            border-left: solid 1px $color-gray-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive-min-width("medium") {
+    .shrink {
+        .myNavBar {
+            display: flex;
+            height: 60px;
+            transition: all 0.3s ease-in-out;
+            .myNavBar__left {
+                img {
+                    transform: scale(0.5);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

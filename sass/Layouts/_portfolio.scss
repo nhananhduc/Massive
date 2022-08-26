@@ -1,0 +1,95 @@
+.portfolio {
+    padding-bottom: 0;
+    .portfolio__menu {
+        margin-bottom: $mg-1;
+        .nav {
+            justify-content: center;
+            .nav-item {
+                a {
+                    @include styleText($color-gray-1, $fs-0 - 1, $fw-0);
+                    letter-spacing: $spacing-1 + 1;
+                    transition: 0.3s;
+                    &.active,
+                    &:hover {
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio__img {
+        .col__img {
+            position: relative;
+            padding: 0;
+            &:hover .portfolio__desc {
+                .desc__button {
+                    i {
+                        transform: translateY(5%);
+                    }
+                }
+                .desc__text {
+                    h4,
+                    p {
+                        transform: translateY(10%);
+                        a:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+                opacity: 1;
+            }
+            .portfolio__desc {
+                opacity: 0;
+                transition: 0.3s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                padding-top: $pd-0 - 5;
+                border: $border-0 solid $color-gray-12;
+                background-color: $color-overlay-1;
+                .desc__button {
+                    width: 100%;
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    i {
+                        color: $color-black-3;
+                        font-size: $fs-3;
+                        margin-bottom: $mg-0 - 5;
+                        transform: translateY(-100%);
+                        transition: 0.3s;
+                    }
+                }
+                .desc__text {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 35%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    h4 {
+                        transition: 0.3s;
+                        transform: translateY(100%);
+                        a {
+                            @include styleText($color-black-1, $fs-0 - 1, $fw-0);
+                            letter-spacing: $spacing-0 - 1;
+                            transition: 0.3s;
+                        }
+                    }
+                    p {
+                        transition: 0.3s;
+                        transform: translateY(100%);
+                        a {
+                            @include styleText($color-gray-2, $fs-0 - 3, $fw-0);
+                            letter-spacing: $spacing-1 + 1;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

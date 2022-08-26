@@ -1,0 +1,73 @@
+.blog {
+    .blog__detail {
+        margin-top: $mg-6;
+        .blog__left {
+            padding: 0 $pd-0;
+            .blog__img {
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: $pd-1 - 2;
+                    margin-bottom: 0;
+                    background-color: $color-overlay-0;
+                    @include styleText($color-white-0, $fs-0, $fw-0);
+                }
+            }
+        }
+        .blog__right {
+            padding: 0 $pd-0;
+            .blog__text {
+                padding: $pd-0 0;
+                .post__cat {
+                    margin-bottom: $mg-5;
+                    a {
+                        @include styleText($color-gray-4, $fs-0 - 3, $fw-0);
+                        margin-right: $mg-5;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+                h4 {
+                    a {
+                        @include styleText($color-black-3, $fs-0 + 3, $fw-0);
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+                .date {
+                    @include styleText($color-gray-4, $fs-0 - 3, $fw-0);
+                    letter-spacing: $spacing-1;
+                    margin-bottom: $mg-0 + 5;
+                    a {
+                        @include styleText($color-gray-4, $fs-0 - 3, $fw-0);
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+                p {
+                    @include styleText($color-gray-0, $fs-0, $fw-0);
+                    line-height: $line-height-2;
+                }
+                .read__more {
+                    @include styleText($color-gray-5, $fs-0, $fw-0);
+                    transition: 0.3s;
+                    &:hover {
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+}

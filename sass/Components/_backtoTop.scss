@@ -1,0 +1,26 @@
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $color-black-8;
+  color: $color-white-0;
+  text-align: center;
+  line-height: $line-height-4;
+  transition: 0.3s;
+  &:hover {
+    color: $color-black-0;
+    background-color: $color-yellow-0;
+  }
+  @include responsive("medium") {
+    display: none;
+  }
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+.banner {
+    background-image: url(../img/index-banner-2.jpg);
+    height: 1230px;
+    @extend %backgroundImg;
+    position: relative;
+    .banner__content{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1{
+            @include styleText($color-white-0, $fs-2, $fw-1);
+            letter-spacing: $spacing-0;
+            margin: 0;
+        }
+        h3{
+            @include styleText($color-white-0, $fs-1, $fw-1);
+            letter-spacing: $spacing-0 + 1;
+            margin: 0;
+        }
+    }
+
+    @include responsive('medium'){
+        .banner__content{
+            h1{
+                font-size: $fs-3;
+            }
+            h3{
+                font-size: $fs-0 + 3;
+                font-weight: $fw-0;
+            }
+        }
+    }
+}
